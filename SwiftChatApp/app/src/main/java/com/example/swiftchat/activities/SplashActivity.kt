@@ -1,4 +1,4 @@
-package com.example.swiftchat
+package com.example.swiftchat.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,12 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.animation.AnimationUtils
-import kotlinx.android.synthetic.main.activity_splash.*
+import androidx.lifecycle.Observer
+import com.example.swiftchat.R
+import com.example.swiftchat.viewmodel.LoginViewModel
+import com.practical.arbeenakhanum.viewmodelfactory.LoginViewModelFactory
+import kotlinx.android.synthetic.main.activity_authentication.*
+import kotlinx.android.synthetic.main.activity_login.*
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         val runnable = Runnable {
-            val splashIntent = Intent(this, MainActivity::class.java)
+            val splashIntent = Intent(this@SplashActivity, AuthenticationActivity::class.java)
             startActivity(splashIntent)
             finish()
         }

@@ -1,4 +1,29 @@
 <resources>
     <string name="app_name">SwiftChat</string>
     <string name="swift_chat_name">SWIFT CHAT</string>
+
+    <string name="invalid_email">"Invalid e-mail address"</string>
+    <string name="invalid_password">"Password must contain at least 8 characters"</string>
+    <string name="weak_password">"Password must have at least 1 digit, 1 lower case letter, 1 upper case letter and 1 special character"</string>
+    <string name="invalid_confirm_password">"Password does not match"</string>
+    <string name="invalid_mobile_number">"Mobile number must contain 10 digits"</string>
+    <string name="weak_mobile_number">"Mobile number invalid"</string>
+    <string name="login_to_your_account">Login To Your Account</string>
+    <string name="enter_e_mail_address">Enter E-mail Address</string>
+    <string name="forgotten_password">Forgotten Password?</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="you_don_t_have_an_account">You don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_e_mail_address">Enter E-mail Address</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="send_otp">Send OTP</string>
+
 </resources>

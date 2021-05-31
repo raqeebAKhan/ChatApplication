@@ -1,10 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.SwiftChat" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="AppTheme." parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/purpleDark</item>
+        <item name="colorOnPrimary">@color/purpleLight</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
@@ -22,9 +22,11 @@
         <item name="android:textColor">@color/purpleLight</item>
         <item name="android:layout_weight">1</item>
         <item name="android:clickable">true</item>
-        <item name="elevation">8dp</item>
-        <item name="backgroundTint">@color/white</item>
+        <item name="elevation">10dp</item>
+        <item name="android:padding">18dp</item>
+        <item name="backgroundTint">@color/purpleLight</item>
         <item name="android:layout_marginStart">@dimen/dp_10</item>
+        <item name="android:layout_marginTop">@dimen/dp_30</item>
         <item name="android:layout_marginEnd">@dimen/dp_10</item>
     </style>
 
@@ -38,4 +40,34 @@
         <item name="android:background">@drawable/edittext_bg</item>
         <item name="android:layout_marginTop">@dimen/dp_15</item>
     </style>
+
+    <style name="PinWidget.PinView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <declare-styleable name="PinView">
+        <attr format="integer" name="itemCount"/>
+        <attr format="dimension" name="itemWidth"/>
+        <attr format="dimension" name="itemHeight"/>
+        <attr format="dimension" name="itemRadius"/>
+        <attr format="dimension" name="itemSpacing"/>
+        <attr format="dimension" name="lineWidth"/>
+        <attr format="reference|color" name="lineColor"/>
+        <attr format="enum" name="viewType">
+            <enum name="rectangle" value="0"/>
+            <enum name="line" value="1"/>
+            <enum name="none" value="2"/>
+        </attr>
+        <attr name="android:cursorVisible"/>
+        <attr format="dimension" name="cursorWidth"/>
+        <attr format="reference|color" name="cursorColor"/>
+        <attr name="android:itemBackground"/>
+        <attr format="boolean" name="hideLineWhenFilled"/>
+    </declare-styleable>
+
+    <declare-styleable name="PinViewTheme">
+        <attr format="reference" name="pinViewStyle"/>
+    </declare-styleable>
 </resources>

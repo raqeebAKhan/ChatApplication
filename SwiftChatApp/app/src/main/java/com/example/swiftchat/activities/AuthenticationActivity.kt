@@ -20,5 +20,10 @@ class AuthenticationActivity : AppCompatActivity() {
             val loginIntent = Intent(this@AuthenticationActivity, LoginActivity::class.java)
             startActivity(loginIntent)
         }
+
+        btnOTP.setOnClickListener {
+            val otpIntent = Intent(this@AuthenticationActivity, OTPActivity::class.java)
+            startActivity(otpIntent)
+        }
     }
 }
